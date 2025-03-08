@@ -1,0 +1,17 @@
+
+
+
+###
+curl -X POST  "http://localhost:3150/api/register"
+-H "Content-Type: application/json" \
+-d '{"fullName": "ahmad mujahid", "email": "mujahidramdhani5@gmail.com", "password": "secret"}'
+
+###
+curl -X POST  "http://localhost:3150/api/login"
+-H "Content-Type: application/json" \
+-d '{"email": "mujahidramdhani5@gmail.com", "password": "secret"}'
+
+###
+curl -X GET  "http://localhost:3150/api/me"
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZjI1N2U0LTFkMDUtNGE0MS1hYmM1LTc5OWU2YWY1YWRiYiIsImVtYWlsIjoibXVqYWhpZHJhbWRoYW5pNUBnbWFpbC5jb20iLCJpYXQiOjE3NDEzOTQ3MzcsImV4cCI6MTc0MTM5NTYzN30.a-SOrURQTkmKQ0McVOS5zUs9hrUrEeM3JVKHEtvNfXU" 
+-H "Content-Type: application/json" 

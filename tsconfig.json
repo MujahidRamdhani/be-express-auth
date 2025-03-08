@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "$routes/*": ["routes/*"],
+      "$controllers/*": ["controllers/*"],
+      "$services/*": ["services/*"],
+      "$validations/*": ["validations/*"],
+      "$utils/*": ["utils/*"],
+      "$entities/*": ["entities/*"],
+      "$middlewares/*": ["middlewares/*"],
+      "$seeders/*": ["seeders/*"],
+      "$config/*": ["config/*"],
+      "$pkg/*": ["pkg/*"],
+      "$app/*": ["app/*"],
+      "$server/*": ["server/*"],
+      "$types/*": ["types/*"],
+      "$repositories/*": ["repositories/*"]
+    }
+  },
+  "include": ["src/**/*", "src/types/express.d.ts"],
+  "exclude": ["node_modules/*", "dist/*", "prisma/*"]
+}
